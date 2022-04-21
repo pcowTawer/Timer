@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     if (argc!=2 && argc!=3)
     {
-        printf("Format: timer <program path> [<txt file name>]");
+        printf("Format: timer <Program path> [<File name>]");
         return 1;
     }
 
@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 
     if(!(strcmp(argv[1], "help")) || (!strcmp(argv[1], "/?")))
     {
-        printf("Creates file(standart timer.txt), that contain time of starting the program, time of the ending the program, and time of working of program\n");
-        printf("Format: timer <program path> [<txt file name>]");
+        printf("Creates a file (default timer.txt) that contains the program start time, program end time, program runtime");
+        printf("Format: timer <program path> [<file name>]");
         return 0;
     }
     FILE *f;
